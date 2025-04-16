@@ -1,8 +1,7 @@
-// components/Layout.tsx
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type LayoutProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export default function Layout({ children }: LayoutProps) {
@@ -13,8 +12,9 @@ export default function Layout({ children }: LayoutProps) {
       </header>
       <main style={{ padding: '2rem' }}>{children}</main>
       <footer style={{ padding: '1rem', background: '#eee', textAlign: 'center' }}>
-        <small>&copy; {new Date().getFullYear()} NoteMate - Tous droits réservés</small>
+        <small>© {new Date().getFullYear()} NoteMate – Tous droits réservés</small>
       </footer>
     </>
   );
 }
+
